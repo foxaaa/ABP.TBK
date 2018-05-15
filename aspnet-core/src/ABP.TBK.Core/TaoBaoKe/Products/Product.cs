@@ -1,17 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 namespace ABP.TBK.TaoBaoKe.Products
 {
-      
-   public class Product : FullAuditedEntity
+
+    [Table("Product")]
+    public class Product  : Entity<int> 
+
     {
-       /// <summary>
-       /// 商品ID
-       /// </summary>
+        /// <summary>
+        /// 商品ID
+        /// </summary>
         public string PId { get; set; }
         /// <summary>
         /// 商品名称
@@ -98,6 +101,9 @@ namespace ABP.TBK.TaoBaoKe.Products
         ///优惠券推广链接
         /// </summary>
         public string CouponTGUrl { get; set; }
-         
+
+      
+
+
     }
 }

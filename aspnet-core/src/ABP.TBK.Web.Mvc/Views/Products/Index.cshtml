@@ -155,13 +155,7 @@
                         <div role="tabpanel" class="tab-pane animated fadeIn" id="create-user-roles">
                             <div class="row">
                                 <div class="col-sm-12 ">
-                                    @foreach (var role in Model.Roles)
-                                    {
-                                        <div class="col-sm-6">
-                                            <input type="checkbox" name="role" value="@role.NormalizedName" title="@role.Description" class="filled-in" id="role-@role.Id" />
-                                            <label for="role-@role.Id" title="@role.DisplayName">@role.Name</label>
-                                        </div>
-                                    }
+                                   
                                 </div>
                             </div>
                         </div>

@@ -15,7 +15,7 @@ using Microsoft.AspNetCore.Antiforgery.Internal;
 
 namespace ABP.TBK.Web.Controllers
 {
-     
+    [AbpMvcAuthorize]
     public class ProductsController : TBKControllerBase
     {
         private readonly IProductAppService _productAppService;
