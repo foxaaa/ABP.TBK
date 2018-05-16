@@ -10,12 +10,12 @@ namespace ABP.TBK.Dto
         public string Sorting { get; set; }
         [Range(0,int.MaxValue)]
         public int SkipCount { get; set; }
-        [Range(1,500)]
+        [Range(1,50)]
         public int MaxResultCount { get; set; }
 
         public PagedAndSortedInputDto() { 
             this.SkipCount = 0;
-            this.MaxResultCount = 500;
+            this.MaxResultCount = 50;
         }
     }
 }
